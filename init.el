@@ -64,6 +64,10 @@
   :config
   (ivy-mode 1))
 
+(use-package ivy-rich
+  :init
+  (ivy-rich-mode 1))
+
 ;; doom-modeline
 (use-package doom-modeline
   :init (doom-modeline-mode 1)
