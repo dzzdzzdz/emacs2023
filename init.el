@@ -28,7 +28,7 @@
 
 (set-face-attribute 'default nil :font "Monaco:bold" :height 175)
 
-;; keys
+;; global keys
 (global-set-key (kbd "M-o") 'other-window)
 
 ;; packages
@@ -91,6 +91,8 @@
 ;; magit
 (use-package magit)
 
+(use-package forge)
+
 ;; rainbow-delimiters
 (use-package rainbow-delimiters
   :hook (prog-mode . rainbow-delimiters-mode))
@@ -122,3 +124,4 @@
 
 ;; windows
 (winner-mode 1)
+(windmove-default-keybindings) ; shift + arrow
