@@ -8,12 +8,15 @@
 
 (menu-bar-mode -1)            ; disable the menu bar
 
-(use-package doom-themes)
+(use-package doom-themes
+  :init (load-theme 'doom-nova t)) ; theme
+
+(use-package all-the-icons) ; icons
 
 (column-number-mode)
 (global-display-line-numbers-mode t)
 
-;; Disable line numbers for some modes
+;; line nums
 (dolist (mode '(org-mode-hook
                 term-mode-hook
                 eshell-mode-hook))
