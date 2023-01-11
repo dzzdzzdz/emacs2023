@@ -8,7 +8,7 @@
 
 (menu-bar-mode -1)            ; disable the menu bar
 
-(load-theme 'tango-dark) ; theme
+(use-package doom-themes)
 
 (column-number-mode)
 (global-display-line-numbers-mode t)
