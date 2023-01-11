@@ -13,6 +13,8 @@
 
 (use-package all-the-icons) ; icons
 
+(setq visible-bell t) ; set up the visible bell
+
 (column-number-mode)
 (global-display-line-numbers-mode t)
 
@@ -22,10 +24,12 @@
                 eshell-mode-hook))
   (add-hook mode (lambda () (display-line-numbers-mode 0))))
 
-;; set up the visible bell
-(setq visible-bell t)
+
 
 (set-face-attribute 'default nil :font "Monaco:bold" :height 175)
+
+;; keys
+(global-set-key (kbd "M-o") 'other-window)
 
 ;; packages
 (require 'package)
