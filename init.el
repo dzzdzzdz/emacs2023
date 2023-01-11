@@ -119,3 +119,6 @@
   (projectile-mode +1)
   (define-key projectile-mode-map (kbd "C-c C-p") 'projectile-command-map)
   (setq projectile-completion-system 'ivy))
+
+;; windows
+(winner-mode 1)
